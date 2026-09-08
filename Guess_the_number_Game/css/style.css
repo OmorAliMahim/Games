@@ -40,6 +40,9 @@ body {
     margin: 4vw;
 }
 
+a{
+    text-decoration: none;
+}
 .navigation {
     padding: 5vh;
     position: sticky;
