@@ -1,0 +1,805 @@
+/* Desktop - default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --theme-color: #0d2161;
+    --theme-bg: #f0f8ff;
+    --btn: rgb(31, 31, 197);
+    --socials: #181717;
+    --text-color: rgba(34, 38, 54, 0.884);
+    --display: rgba(13, 33, 97, 0.08);
+    --btn-bg: #0d2161;
+}
+
+body {
+    background-color: var(--theme-bg);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#mobile_theme_switch {
+    display: none;
+}
+
+.dark {
+    --btn-bg: rgb(31, 31, 197);
+    --theme-color: #f0f8ff !important;
+    --theme-bg: #0d2161;
+    --btn: rgb(85, 85, 212);
+    --socials: #f0f8ff;
+    --socials-hover: #121;
+    --text-color: #f0f8ff;
+    --display: rgba(255, 255, 255, 0.08);
+}
+
+.rule {
+    margin: 4vw;
+}
+
+.navigation {
+    padding: 5vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--theme-bg);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.Logo {
+    color: var(--theme-color);
+    font-size: 30px;
+    margin-left: 2vw;
+}
+
+.Logo2 {
+    color: var(--theme-color);
+    font-size: 30px;
+    margin-left: 1vw;
+}
+
+.nav_item {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 9rem;
+    width: 25vw;
+}
+
+.nav_item a {
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: .5rem 1rem;
+
+    border-radius: 15px;
+    display: flex
+}
+
+.nav_item a:hover {
+
+    box-shadow: 0 2px 3px #181717;
+    transition: 0.5s ease;
+}
+
+.sun {
+    font-size: 22px;
+}
+
+.moon {
+    font-size: 22px;
+}
+
+.moon {
+    display: none;
+}
+
+
+.dark #theme_switch .moon {
+    display: block;
+}
+
+.dark #theme_switch .sun {
+    display: none;
+}
+
+.dark #theme_switch:hover .sun {
+    display: block;
+    transition: 0.5s ease-in;
+}
+
+.dark #theme_switch:hover .moon {
+    display: none;
+    transition: 0.5s ease-out;
+}
+
+#theme_switch:hover .moon {
+    display: block;
+    transition: 0.5s ease-in;
+}
+
+#theme_switch:hover .sun {
+    display: none;
+    transition: 0.5s ease-out;
+}
+
+#theme_switch {
+    display: flex;
+    padding: 10px 10px;
+    background-color: var(--btn);
+    border-radius: 50%;
+    border: 1px solid var(--btn);
+    margin-right: 2vw;
+    color: var(--theme-color);
+}
+
+#theme_switch:hover {
+    cursor: pointer;
+}
+
+span {
+    color: rgb(136, 187, 16);
+}
+
+.tc2 {
+    text-align: start;
+    color: var(--text-color);
+    padding: 1rem 0;
+}
+.tc {
+    text-align: center;
+    color: var(--text-color);
+    padding: 1rem 0;
+}
+
+.tr {
+    text-align: left;
+    font-size: 20px;
+    color: var(--text-color);
+    padding: 1rem 0;
+    margin: 0 20vw;
+    line-height: 2rem;
+    font-weight: 600;
+}
+
+.tr2 {
+    text-align: left;
+    font-size: 20px;
+    color: var(--text-color);
+    /* padding: 1rem 0;
+    margin: 0 20vw; */
+    line-height: 2rem;
+    font-weight: 200;
+    white-space: pre-line;
+
+}
+
+#game2{
+    color: var(--theme-color);
+}
+
+.game_Name {
+    color: rgb(136, 187, 16);
+    font-size: 3rem;
+}
+
+.gn {
+    color: var(--theme-color);
+}
+
+.Guess_the_number {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    color: var(--theme-color);
+}
+
+.guess_div {
+    margin: 2vh 23vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#userinput {
+    border: 1px solid #121;
+    margin: 0 12vw;
+    padding: 1vh 0;
+    border-radius: 15px;
+    text-align: center;
+    outline: none;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+#userinput::-webkit-inner-spin-button,
+#userinput::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#userinput::placeholder {
+    text-align: center;
+}
+
+.input_btn {
+    background-color: var(--btn-bg);
+    color: white;
+    border-radius: 15px;
+    width: 25vw;
+    margin: 1vh 14vw;
+    border: none;
+    padding: 1rem;
+}
+
+.display {
+    width: 50vw;
+    height: 100px;
+    border: 1px solid var(--theme-color);
+    background-color: var(--theme-color);
+    border-radius: 5px;
+    margin-left: 25vw;
+
+    margin: 20px 10vw;
+    padding: 15px 10px;
+    width: 80%;
+    min-height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--display);
+    border: 2px solid var(--theme-color);
+    border-radius: 12px;
+
+    color: var(--theme-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+
+#about {
+    margin: 20vh 8vw;
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    align-items: center;
+}
+
+img {
+    display: flex;
+    align-self: end;
+    align-self: center;
+    width: 200px;
+    margin-top: 5rem;
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 25vh;
+}
+
+.credit {
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+/* Social Media Tooltip Tag */
+.socials {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.socials a {
+    position: relative;
+    color: var(--socials);
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 .7rem;
+}
+
+/* Hover Effect on Icon */
+.socials a:hover {
+    color: var(--theme-color);
+    transform: translateY(-3px);
+}
+
+/* Tooltip Tag Box (Pseudo-element) */
+.socials a::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 135%;
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    background-color: var(--surface-color);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 6px;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials a::before {
+    content: '';
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%) translateY(6px);
+    border-width: 5px;
+    border-color: var(--border-color) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials a:hover::after,
+.socials a:hover::before {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    /* Navigation */
+    .navigation {
+        padding: 3vh 3vw;
+    }
+
+    .nav {
+        margin-top: 1vh;
+    }
+
+    .Logo {
+        font-size: 26px;
+        margin-left: 1vw;
+    }
+
+    .nav_item {
+        width: auto;
+        margin-right: 3rem;
+        gap: 0.5rem;
+    }
+
+    .nav_item a {
+        padding: 0.5rem 0.7rem;
+    }
+
+    /* Rules */
+    .rule {
+        margin: 4vw;
+    }
+
+    .tr {
+        margin: 0 8vw;
+        font-size: 18px;
+        line-height: 1.8rem;
+    }
+
+    .game_Name {
+        font-size: 2.5rem;
+    }
+
+    /* Game */
+    .Guess_the_number {
+        width: 100%;
+        height: auto;
+        padding: 5vh 5vw;
+    }
+
+    .guess_div {
+        margin: 2vh auto;
+        width: 80%;
+    }
+
+    #userinput {
+        margin: 0;
+        width: 100%;
+    }
+
+    .input_btn {
+        width: 60%;
+        margin: 1vh auto;
+    }
+
+    .display {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* About */
+    #about {
+        margin: 10vh auto;
+        width: 85%;
+        gap: 5vw;
+    }
+
+    .tr2 {
+        font-size: 18px;
+        line-height: 1.8rem;
+    }
+
+    img {
+        width: 180px;
+    }
+
+    /* Footer */
+    footer {
+        height: auto;
+        padding: 5vh 5vw;
+        gap: 3rem;
+    }
+
+    .credit {
+        width: auto;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .navigation {
+        padding: 2vh 4vw;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .nav {
+        margin-top: 0;
+        position: relative;
+    }
+
+    .Logo {
+        font-size: 22px;
+        margin-left: 0;
+    }
+
+    /* =========================
+       MOBILE 3-DOT BUTTON
+       ========================= */
+
+    #theme_switch {
+        margin-right: 0;
+        padding: 0;
+        width: 30px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    #theme_switch .sun,
+    #theme_switch .moon {
+        display: none !important;
+    }
+
+    #theme_switch::before {
+        content: "⋮";
+        font-size: 28px;
+        line-height: 20px;
+        color: white;
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* =========================
+       MOBILE DROPDOWN MENU
+       ========================= */
+
+    .nav_item {
+        display: none;
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        width: 180px;
+        margin: 0;
+        padding: 10px;
+        flex-direction: column;
+        gap: 5px;
+
+        background-color: var(--theme-bg);
+        border: 1px solid var(--theme-color);
+        border-radius: 12px;
+
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav_item.active {
+        display: flex;
+    }
+
+    .nav_item a {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px 12px;
+        border-radius: 8px;
+    }
+
+    .nav_item a:hover {
+        box-shadow: none;
+        background-color: var(--display);
+    }
+
+    /* =========================
+       THEME BUTTON INSIDE MENU
+       ========================= */
+
+    #mobile_theme_switch {
+        display: flex;
+        width: 100%;
+        min-height: 40px;
+        justify-content: flex-start;
+        align-items: center;
+
+        padding: 10px 12px;
+        margin: 0;
+
+        border: none;
+        border-radius: 8px;
+        background: transparent;
+
+        color: var(--text-color);
+        cursor: pointer;
+    }
+
+    #mobile_theme_switch:hover {
+        background-color: var(--display);
+    }
+
+    #mobile_theme_switch .sun,
+    #mobile_theme_switch .moon {
+        font-size: 20px;
+        color: var(--theme-color);
+    }
+
+    /* =========================
+       REST OF MOBILE CSS
+       ========================= */
+
+    .rule {
+        margin: 6vh 6vw;
+    }
+
+    .rule h1 {
+        font-size: 26px;
+    }
+
+    .rule h2 {
+        font-size: 20px;
+    }
+
+    .game_Name {
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+
+    .tr {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.7rem;
+    }
+
+    .rule p {
+        text-align: left;
+    }
+
+    .Guess_the_number {
+        width: 100%;
+        height: auto;
+        padding: 5vh 6vw;
+    }
+
+    .guess_div {
+        width: 100%;
+        margin: 2vh 0;
+    }
+
+    .guess_div h2 {
+        font-size: 21px;
+        line-height: 1.5;
+    }
+
+    #userinput {
+        width: 100%;
+        margin: 0;
+        padding: 12px 10px;
+        font-size: 16px;
+    }
+
+    .input_btn {
+        width: 70%;
+        margin: 15px auto;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .display {
+        width: 100%;
+        margin: 20px 0;
+        min-height: 60px;
+        font-size: 16px;
+    }
+
+    #about {
+        width: 88%;
+        margin: 8vh auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        align-items: center;
+    }
+
+    .about_creator {
+        width: 100%;
+    }
+
+    .about_creator h1 {
+        font-size: 30px;
+    }
+
+    .about_creator h2 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .tr2 {
+        font-size: 16px;
+        line-height: 1.7rem;
+        text-align: left;
+    }
+
+    img {
+        width: 160px;
+        margin-top: 1rem;
+    }
+
+    footer {
+        height: auto;
+        padding: 5vh 6vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .credit {
+        width: 100%;
+    }
+
+    .Logo2 {
+        font-size: 24px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        margin-top: 8px;
+    }
+
+    .socials {
+        margin-right: 0;
+        gap: 0.5rem;
+    }
+
+    .socials a {
+        margin: 0 0.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media (max-width: 480px) {
+
+    .Logo {
+        font-size: 19px;
+    }
+
+    #theme_switch {
+        padding: 7px;
+    }
+
+    .rule {
+        margin: 5vh 5vw;
+    }
+
+    .rule h1 {
+        font-size: 23px;
+    }
+
+    .game_Name {
+        font-size: 1.7rem;
+    }
+
+    .tr {
+        font-size: 15px;
+        line-height: 1.6rem;
+    }
+
+    .guess_div h2 {
+        font-size: 18px;
+    }
+
+    .input_btn {
+        width: 80%;
+    }
+
+    .display {
+        font-size: 15px;
+    }
+
+    img {
+        width: 140px;
+    }
+
+    .about_creator h1 {
+        font-size: 27px;
+    }
+
+    .about_creator h2 {
+        font-size: 18px;
+    }
+
+    .tr2 {
+        font-size: 15px;
+    }
+}

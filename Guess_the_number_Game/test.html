@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,-25&icon_names=sunny" />
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,-25&icon_names=dark_mode" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body id="Home">
+        <header class="navigation">
+            <nav class="nav">
+                <div class="Logo">Omor Ali Mahim</div>
+                <div class="nav_item">
+                    <a href="#Home">Home</a>
+                    <a href="#rules">Rules</a>
+                    <a href="#game2">Game</a>
+                    <a href="#about">About</a>
+                    <a href="https://omoralimahim.vercel.app/"
+                        target="_blank">Portfolio</a>
+                </div>
+                <div>
+                    <button id="theme_switch">
+                        <span class="material-symbols-outlined sun">sunny</span>
+                        <span
+                            class="material-symbols-outlined moon">dark_mode</span>
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <section class="rule">
+            <h1 id="rules" class="tc">Welcome to <div class="game_Name">Guess
+                    the <span class="gn">Number</span></div></h1>
+            <h2 class="tc">Let's learn how to play</h2>
+            <h3 class="tr"> 📌 Game Rules</h3>
+            <p class="tr">Your goal is to guess a random number between **1 and
+                100**.<br>
+
+                1. The computer will randomly choose a number between **1 and
+                100**.<br>
+                2. Enter your guess in the input box.<br>
+                3. Click the **Guess** button or press **Enter** to submit your
+                guess.<br>
+                4. You have a total of **10 attempts**.<br>
+                5. Each incorrect guess will reduce your remaining attempts by
+                **1**.<br>
+                6. If your guess is **lower** than the hidden number, you will
+                see **"Too low!"**<br>
+                7. If your guess is **higher** than the hidden number, you will
+                see **"Too high!"**<br>
+                8. If you guess the correct number, **you win the game!**<br>
+                9. If you use all 10 attempts without guessing correctly,
+                **Game Over**.<br>
+                10. After the game is over, the correct number will be
+                revealed.<br>
+
+                ### 🏆 Your Goal<br>
+
+                Try to guess the correct number using **as few attempts as
+                possible!<br>
+
+                <span id="game2">**Good luck and have fun! 🎮**</span>
+
+            </p>
+        </section>
+
+        <section id="" class="Guess_the_number">
+            <div class="guess_div">
+                <h2 class="tc"><span>Guess</span> a number between 1 to 100</h2>
+            </div>
+            <div class="guess_div">
+                <input id="userinput" type="number" placeholder="1 to 100" />
+                <input class="input_btn" onclick="checkGuess()" type="button"
+                    value="Enter" />
+            </div>
+            <div class="display"></div>
+        </section>
+
+        <section id="about">
+            <div class="about_creator">
+                <h1 class="tc2">About</h1>
+
+                <h2 class="tc2">Designing ideas. Building experiences.</h2>
+                
+                <p class="tr2">
+
+                    I’m <strong>Omor Ali Mahim</strong>, a passionate <strong>Web Designer & Developer</strong> focused on creating modern, responsive,
+                    and user-centered digital experiences.
+
+                    I enjoy turning ideas into interfaces that feel <strong>clean, intuitive, and purposeful</strong>. 
+                    From crafting a strong visual identity to writing the code behind a responsive interface,
+                    I care about every detail that makes a website feel polished.
+
+                    My current focus is on <strong>HTML, CSS, JavaScript, UI/UX, responsive design, and modern 
+                    web technologies</strong>. I’m constantly experimenting, learning, and refining my approach to
+                    create better digital experiences.
+
+                    I believe great websites aren’t just about how they look —
+                    <strong>they’re about how they feel, how they work, and how
+                    effortlessly people can use them.</strong>
+
+                    **Let’s build something meaningful.**
+                </p>
+            </div>
+            <div class="img"><img
+                    src="./img/ChatGPT Image Aug 28, 2026, 10_17_53 PM.png"
+                    alt="Omor Ali Mahim"></div>
+        </section>
+        <footer>
+            <div class="credit">
+                Created By<span class="Logo2">Omor Ali Mahim</span>
+                <div class="copyright">© 2026 Omor Ali Mahim. All rights
+                    reserved.</div>
+            </div>
+            <div class="info"></div>
+            <div class="socials">
+                <a href="https://github.com/OmorAliMahim" target="_blank"
+                    data-tooltip="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/omoralimahim/"
+                    target="_blank" data-tooltip="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/ms.omor.0.5" target="_blank"
+                    data-tooltip="Facebook">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="tel:+8801735599849" data-tooltip="Call Me">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </footer>
+        <script src="./js/test.js"></script>
+    </body>
+
+</html>
