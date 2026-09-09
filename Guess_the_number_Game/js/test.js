@@ -8,6 +8,13 @@ const mobileTheme = button.cloneNode(true);
 mobileTheme.id = "mobile_theme_switch";
 navItem.appendChild(mobileTheme);
 
+//hide dropdown
+navItem.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        navItem.classList.remove("active");
+    });
+});
+
 // pre-load theme save 
 if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark");
@@ -37,6 +44,7 @@ mobileTheme.addEventListener("click", () => {
         "theme",
         document.body.classList.contains("dark") ? "dark" : "light"
     );
+    navItem.classList.remove("active");
 });
 
 
