@@ -533,7 +533,7 @@ footer {
         content: "⋮";
         font-size: 28px;
         line-height: 20px;
-        color: white;
+        color:  var(--theme-color);
         position: absolute;
         top: 5px;
         left: 50%;
