@@ -115,7 +115,7 @@ function checkGuess() {
         const score = 10 - totalattempts;
 
         // best score save
-        if (bestScore === null || score < bestScore) {
+        if (bestScore === null || score > bestScore) {
 
             bestScore = score;
 
