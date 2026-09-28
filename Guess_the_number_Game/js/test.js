@@ -111,7 +111,8 @@ function checkGuess() {
     // right guess
     if (userGuess === randomNumber) {
 
-        const score = 10 - attempts;
+        const totalattempts = 10 - attempts;
+        const score = 10 - totalattempts;
 
         // best score save
         if (bestScore === null || score < bestScore) {
@@ -122,7 +123,7 @@ function checkGuess() {
         }
 
         display.textContent =
-            `🎉 Congratulations! You won in ${score} attempts! Best Score: ${bestScore}`;
+            `🎉 Congratulations! You won in ${totalattempts} attempts! Best Score: ${bestScore}`;
 
         gameOver = true;
     }
