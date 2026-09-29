@@ -115,6 +115,9 @@ function checkGuess() {
         const score = 10 - totalattempts;
 
         // best score save
+        let bestScore = localStorage.getItem("bestScore");
+        bestScore = bestScore !== null ? Number(bestScore) : null;
+        
         if (bestScore === null || score > bestScore) {
 
             bestScore = score;
